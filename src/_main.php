@@ -1,5 +1,5 @@
 <?php namespace ProcessWire;
-/**{{{
+/**{{
  * _main.php
  * Main markup file
  *
@@ -41,8 +41,8 @@
     <!-- Import other AMP Extensions here -->
     <style amp-custom>
     /* Add your styles here */
-	body {   <!-- EJEMPLO BASICO DE AMP -->
-    	background-color: white;
+	body {   
+    	background-color: black;
 	width: auto;
 	margin: 0;
 	padding: 0;
@@ -246,7 +246,7 @@ a {
 </nav>
 </header>
 <!-- }} -->
-<div class="content"> <!-- {{{ -->
+<div class="content"> <!-- {{ -->
 
 <div class="TESTING">
 
