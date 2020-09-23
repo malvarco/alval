@@ -36,16 +36,18 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 	<meta name="description" content="<?php echo $page->summary; ?>" />
 <link rel="icon" type="image/x-icon" href="<?php echo $config->urls->templates ?>assets/img/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <!-- Import other AMP Extensions here -->
-    <style amp-custom>
+    <style id="ampcss" amp-custom>
     /* Add your styles here */
 	body {   
-    	background-color: black;
+    	background-color: white;
 	width: auto;
 	margin: 0;
 	padding: 0;
+	display: block;
   	}
 
 /* ************************************************************************************ */
@@ -167,7 +169,7 @@ a {
 
 /*********************************************************************
  * 4. Footer
- *{{{
+ *{{
  */
 
  .footer {
@@ -183,9 +185,8 @@ a {
 }
 
 /*
-* }}}
+* }}
 */
-
     </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <link rel="canonical" href=".">
@@ -248,21 +249,19 @@ a {
 <!-- }} -->
 <div class="content"> <!-- {{ -->
 
-<div class="TESTING">
+<div id='pre-ad' pw-optional></div>
 
 
-</div> <!-- TESTING -->
-
-
-		<div> 
+		<div id='body-field' pw-optional> 
 			<h1><?php echo $title; ?></h1>
 			<?php echo $content; ?>
 
 		</div>
-
+<div id='post-ad' pw-optional></div>
+<div id='contacto-aldo' pw-optional></div>
 </div>
-<!-- }}} -->
-<footer class="footer"> <!-- {{{ -->
+<!-- }} -->
+<footer class="footer"> <!-- {{ -->
 <?php  echo $pages->get('contacto')->summary; ?>
 </footer>
 
