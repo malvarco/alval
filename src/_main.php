@@ -36,14 +36,15 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 	<meta name="description" content="<?php echo $page->summary; ?>" />
 <link rel="icon" type="image/x-icon" href="<?php echo $config->urls->templates ?>assets/img/favicon.ico">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+
     <!-- Import other AMP Extensions here -->
-    <style id="ampcss" amp-custom>
-    /* Add your styles here */
-	body {   
-    	background-color: white;
+<style id="ampcss" amp-custom>
+/* Add your styles here */
+body {   
+    	background-color: black;
 	width: auto;
 	margin: 0;
 	padding: 0;
@@ -82,7 +83,7 @@ a {
 .logo {
     width: 40%;
     text-align: left;
-    margin: 10px;
+    padding: 10px;
 }
 
 .logo amp-img {
@@ -169,7 +170,7 @@ a {
 
 /*********************************************************************
  * 4. Footer
- *{{
+ *
  */
 
  .footer {
@@ -180,13 +181,9 @@ a {
 	line-height: 3;
 	text-align: center;
 	width: 100%;
-	border-top: 1px solid #eee; 
 	font-size: 1em; 
 }
 
-/*
-* }}
-*/
     </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <link rel="canonical" href=".">
@@ -213,7 +210,7 @@ a {
 <!-- logo image version -->
 <amp-img
 	alt="Logo de Alval Language Systems"
-	src="<?= $pages->get('/')->images->get('logotipo04.png')->httpUrl; ?>"
+	src="<?= $pages->get('/')->images->get('logo.png')->httpUrl; ?>"
 	width="200"
 	height="70"
         layout="fixed">
@@ -246,20 +243,20 @@ a {
 
 </nav>
 </header>
-<!-- }} -->
-<div class="content"> <!-- {{ -->
 
-<div id='pre-ad' pw-optional></div>
+<pw-region id="page-banners" pw-optional>
+</pw-region>
 
-
-		<div id='body-field' pw-optional> 
-			<h1><?php echo $title; ?></h1>
+<pw-region id="bodypage-content" pw-optional>
+		<div id='body-field'> 
+			<h1><?php// echo $title; ?></h1>
 			<?php echo $content; ?>
-
 		</div>
-<div id='post-ad' pw-optional></div>
-<div id='contacto-aldo' pw-optional></div>
-</div>
+</pw-region>
+
+<pw-region id="relacionados" pw-optional>
+</pw-region>
+
 <!-- }} -->
 <footer class="footer"> <!-- {{ -->
 <?php  echo $pages->get('contacto')->summary; ?>
