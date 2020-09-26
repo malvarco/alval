@@ -22,8 +22,9 @@
 /* 1.Front-banner style */
 
 .alval-lab-banner {
+    margin-top: 100px;
     position: absolute;
-    background-image: url('<?php echo $pages->get('/productos/smartclass-live')->images->get('img_20170331_090539_medium.jpg')->httpUrl; ?>');
+    background-image: url('<?php echo $pages->get('/avisos/aviso1')->images->get('img_20170331_090539lb.jpg')->url; ?>');
     background-repeat: no-repeat;
     background-attachmente: fixed;
     background-position: center;
@@ -36,49 +37,65 @@
 }
 
 .alval-lab-banner h1 {
-    color: navy;
+    color: dodgerblue;
     font-family: Arial;
     font-size: 50px;
+    margin-bottom: 300px;
+    border-radius: 15px; 
     text-align: center;
-    padding-bottom: 12%;
+    padding: 10px;
+    background: ghostwhite;
 }
 
-.alval-lab-banner ul {
-   color: aquamarine;
-   font-family: Arial;
-   font-size: 2em;
-   text-align: left;
-   padding-right: 20%;
+
+.button-container {
+  width: 70%;
+  padding: 0;
+  margin-top: 150px;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.button-container button {
+  transition: all 0.5s ease;
+  color: #fff;
+  border: 3px solid white;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+  min-width: 250px;
+}
+
+button:hover {
+  color: #001f3f;
+  border-color: dodgerblue;
 }
 
 .alval-lab-banner p {
-   background: white;
-   color: navy;
-   width: 33%;
-   font-family: Arial;
+   color: cornsilk;
+   width: 50%;
+   font-family: Roboto;
    font-size: 30px;
    flex-wrap: wrap;
    text-align: center;
-   padding: 10px;
+   margin-bottom: 150px;
    border-radius: 25px;
 }
-
 </p>
 
 
-<div id="page-banners">
-<div class="alval-lab-banner">
-<h1><?php  echo $pages->get('/')->headline; ?></h1>
-<ul>
-<li>Plataforma</li>
-<li>Contenido</li>
-<li>Laboratorio de idiomas</li>
-</ul>
-    <p>ALVAL LANGUAGE SYSTEMS implementa soluciones educativas para apoyar a los profesores de idiomas en la enseñanza y para brindar a los alumnos un sistema de aprendizaje moderno, entretenido y eficaz.</p>
-</div>
-</div>
+<?php include("./includes/contents/home/estatico.inc" . ".php"); ?>
 
-<div id="bodypage-content"></div>
+<div id="dinamico"></div>
+
 
 
 
