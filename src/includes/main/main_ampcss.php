@@ -1,10 +1,12 @@
 
 body {   
-    	background-color: black;
-	width: auto;
-	margin: 0;
-	padding: 0;
+    background-color: black;
 	display: block;
+    font-family: "Open sans",Helvetica,Arial,sans-serif;
+    margin: auto; 
+    padding: 0;
+    text-align: center;
+    width: auto; 
   	}
 
 /* ************************************************************************************ */
