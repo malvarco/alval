@@ -1,8 +1,8 @@
 
 body {   
-    background-color: black;
+    background-color: #333;
 	display: block;
-    font-family: "Open sans",Helvetica,Arial,sans-serif;
+    font-family: "Noto Sans",Helvetica,Arial,sans-serif;
     margin: auto; 
     padding: 0;
     text-align: center;
@@ -12,7 +12,7 @@ body {
 /* ************************************************************************************ */
 
 nav {
-    background: #222;
+    background: #333;
     display: flex;
     flex-flow: wrap;
     justify-content: center;
@@ -141,3 +141,4 @@ a {
 	width: 100%;
 	font-size: 1em; 
 }
+

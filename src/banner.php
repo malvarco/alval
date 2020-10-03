@@ -16,6 +16,14 @@ if ($imageCount = page()->images->count() > 1) {
     }
 ?>
 
+<?php
+if ($page->youtubeid != '') {
+    echo "<div class='marco-video'>";
+    echo "<amp-youtube data-videoid='$page->youtubeid' layout='fixed' width='480' height='270'>";
+    echo "</div>";
+    }
+?>
+
 <div class="textbody">
 <?= $page->body ?>
 </div>

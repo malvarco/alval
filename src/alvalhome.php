@@ -26,7 +26,7 @@
 }
 <?= $pages->get('/estaticos/card2-letstalkenglish')->amp_css; ?>
 <?= $pages->get('/estaticos/card3-sclasslive')->amp_css; ?>
-
+<?= $pages->get('/contacto')->amp_css; ?>
 
 
 </p>
@@ -41,6 +41,7 @@ echo $pages->get('/estaticos/card1-sclasshub')->render();
 echo "<div class='container-inline'>";
 echo $pages->get('/estaticos/card2-letstalkenglish')->render();
 echo $pages->get('/estaticos/card3-sclasslive')->render();
+echo $pages->get('/contacto')->render();
 echo "</div>";
 ?>
 
